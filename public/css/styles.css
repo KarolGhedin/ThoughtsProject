@@ -1,0 +1,290 @@
+* {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf3d5;
+    color: #424d48;
+}
+
+/* navbar */
+#logo img {
+    height: 40px;
+}
+
+#navbar {
+    padding: 1.2em 1.4em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf3d5;
+    border-bottom: 2px solid #02b064;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin-left: 1em;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    transition: .5s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#navbar ul li a:hover {
+    color: #02b064;
+}
+
+/* container */
+.container {
+    min-height: 60vh;
+    padding: 2em;
+} 
+
+/* messages */
+.message {
+    padding: 1em;
+    color: #374687;
+    background-color: #c3dffe;
+    border: 1px solid #89bbe4;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto 2em;
+    max-width: 60%;
+}
+
+/*login and register */
+.auth-container {
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container h2 { 
+    margin-bottom: 1em;
+    color: #424d48;
+    border-left: 4px solid #02b064;
+    padding: .3em;
+    width: 100px;
+}
+
+.auth-container a {
+    color: #02b064;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-control input, 
+.form-control textarea {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #02b064;
+}
+
+form input[type='submit'],
+.btn{
+    background-color: transparent;
+    color: #02b064;
+    border: 2px solid #02b064;
+    padding: 0.5em 1.2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+}
+
+form input[type='submit']:hover,
+.btn:hover{
+    background-color: #02b064;
+    color: #424d48;
+}
+/* create / edit form */
+.thought-form-container {
+    color: #02b064;   
+}
+
+.thought-form-container:hover {
+    color: #424d48;
+}
+
+.thought-form-container h1 {
+    margin: 1em;
+    color: #424d48;
+    border-left: 4px solid #02b064;
+    padding: 0.3em;
+}
+
+.thought-form-container form {
+    max-width: 30%;
+    margin-top: 1.5em;
+}
+/* dashboard */
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.title-container h2{
+    border-left: 4px solid #02b064;
+    padding: 10px;
+}
+
+.dashboard h3 {
+    margin-bottom: 1.5em;
+}
+
+.dashboard ul {
+    list-style: none;
+}
+
+.dashboard li {
+     padding: 12px;
+     border-bottom: #02b064;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.dashboard .lable {
+    font-weight: bold;
+    color: #02b064;
+    margin-right: 2em;
+}
+
+.dashboard .actions {
+    display: flex;
+}
+
+.dashboard .actions .btn {
+    color: #424d48;
+    border-color: #424d48;
+    margin: 0 0.5em;
+}
+
+/* home */
+
+.home-header {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-header h1 {
+    margin-bottom: 1em;
+}
+
+.home-header span {
+    color: #02b064;
+}
+
+.home-header p,
+.home-header .form-control {
+    margin-bottom: 1.2em;
+}
+
+.home-header input {
+    border: none;
+    border-bottom: 1px solid #424d48;
+    padding: 0.5em;
+    margin-right: 1em;
+}
+
+.home-header input[type='text'] {
+    width: 60%;
+}
+
+.home-header input:placeholder {
+    color: #424d48;
+}
+
+.order-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto 1em;
+}
+
+.order-container span {
+    font-weight: bold;
+    color: #424d48;
+}
+
+.order-container form {
+    margin: 0;
+}
+
+.order-container button {
+    margin-bottom: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.order-container button:hover,
+.order-container i:hover,
+.order-container a:hover {
+    color: #02b064;
+}
+
+.order-container button,
+.order-container i,
+.order-container a {
+   margin: 0 7px;
+}
+
+.thoughts-container figure{
+    border-bottom: 1px solid #bbd4f2;
+    padding: 0.5em;
+    max-width: 50%;
+    margin: 0 auto 1em;
+}
+
+.thoughts-container blockquote {
+    font-style: italic;
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
+
+.thoughts-container span {
+    color: #5388d8;
+}
+
+/* footer */
+footer{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #02b064;
+}
+
+footer span {
+    font-weight: bold;
+    color: #02b064;
+}
+
+
+
+
